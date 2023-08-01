@@ -1,26 +1,12 @@
 import styled from "styled-components";
 
-export const StyledDiv = styled.div`
-  background-color: black;
-  color: white;
+export const StyledHeader = styled.header`
   display: flex;
-  justify-content: center;
-  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25.9rem;
 
-  .container {
-    display: flex;
-    justify-content: space-around;
-    width: 100rem;
-  }
-
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25.9rem;
-  }
-
-  .header h3 {
+  h3 {
     margin-top: auto;
   }
 
