@@ -4,6 +4,7 @@ export const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
   width: 25.9rem;
 
   h3 {

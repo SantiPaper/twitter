@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const StyledDiv = styled.div`
-  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 
   .container {
     display: flex;
