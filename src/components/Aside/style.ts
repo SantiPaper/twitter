@@ -57,14 +57,14 @@ export const StyledSection = styled.section`
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  .container {
+  .container__sections {
     background-color: #202327;
-    width: 100%;
-    border-radius: 1.8rem;
-    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    border-radius: 1.8rem;
+    margin-top: 1.5rem;
   }
   .tendencias_text {
     font-size: 2rem;
@@ -157,8 +157,13 @@ export const StyledSection = styled.section`
       font-size: 1.2rem;
     }
   }
-  .link {
+  .link:not(:first-of-type) {
     padding: 0.7rem;
+  }
+  .link:first-of-type {
+    padding-right: 0.7rem;
+  }
+  .link {
     font-size: 1.3rem;
     text-align: start;
   }

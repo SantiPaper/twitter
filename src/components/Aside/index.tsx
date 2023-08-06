@@ -1,6 +1,8 @@
 import { StyledSection } from "./style";
 import More from "../../icons/More";
 import Search from "../../icons/Search";
+import { tendencias } from "../../utils/tendencias";
+
 export const Aside = () => {
   return (
     <StyledSection>
@@ -21,44 +23,23 @@ export const Aside = () => {
         </p>
         <button className="verificacion__button">Obtener verificacion</button>
       </div>
-      <div className="container">
+      <div className="container__sections">
         <h3 className="tendencias_text">Qué está pasando</h3>
-        <article className="tendencia">
-          <div>
-            <p className="tendencia__categoria">Tendencia en desarrollo</p>
-            <h3 className="tendencia__nombre">Santiago Vitelli</h3>
-            <p className="tendencia__posts">60 mil posts</p>
-          </div>
-          <More />
-        </article>
-        <article className="tendencia">
-          <article>
-            <p className="tendencia__categoria">Tendencia en desarrollo</p>
-            <h3 className="tendencia__nombre">Santiago Vitelli</h3>
-            <p className="tendencia__posts">60 mil posts</p>
+
+        {tendencias.map((item) => (
+          <article key={item.nombre} className="tendencia">
+            <div>
+              <p className="tendencia__categoria">{item.tendencia}</p>
+              <h3 className="tendencia__nombre">{item.nombre}</h3>
+              <p className="tendencia__posts">{item.posts}</p>
+            </div>
+            <More />
           </article>
-          <More />
-        </article>
-        <article className="tendencia">
-          <div>
-            <p className="tendencia__categoria">Tendencia en desarrollo</p>
-            <h3 className="tendencia__nombre">Santiago Vitelli</h3>
-            <p className="tendencia__posts">60 mil posts</p>
-          </div>
-          <More />
-        </article>
-        <article className="tendencia">
-          <div>
-            <p className="tendencia__categoria">Tendencia en desarrollo</p>
-            <h3 className="tendencia__nombre">Santiago Vitelli</h3>
-            <p className="tendencia__posts">60 mil posts</p>
-          </div>
-          <More />
-        </article>
+        ))}
 
         <a className="container__tendencias__showmore">Mostrar mas</a>
       </div>
-      <section className="container">
+      <section className="container__sections">
         <h3 className="recomended__header">A quién seguir</h3>
         <article className="recomender__acc">
           <div className="recomender__info">
