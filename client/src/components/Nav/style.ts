@@ -68,6 +68,8 @@ export const StyledHeader = styled.header`
 
   .container__username {
     font-weight: 100;
+    font-size: 1.7rem;
     color: rgba(255, 255, 255, 0.5);
+    margin-top: -0.3rem;
   }
 `;
