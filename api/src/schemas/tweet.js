@@ -1,11 +1,15 @@
-import mongoose from "mongoose"
+const mongoose = require("mongoose");
 
 
-const postSchema = mongoose.Schema({
-    username: {
+const tweetSchema = mongoose.Schema({
+    description: {
         type: String,
         required: true
+    },
+    image: {
+        type: String,
+        required: false
     }
 });
 
-module.exports = mongoose.model('tweet', postSchema);
+module.exports = mongoose.model("tweet", tweetSchema);
