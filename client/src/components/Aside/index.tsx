@@ -8,6 +8,7 @@ export const Aside = () => {
     <StyledSection>
       <div className="search">
         <Search />
+        <label htmlFor="search">Search</label>
         <input
           aria-label="búsqueda"
           placeholder="Buscar en twitter"

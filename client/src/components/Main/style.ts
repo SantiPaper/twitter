@@ -56,6 +56,9 @@ export const StyledMain = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    label {
+      display: none;
+    }
   }
   .info__textarea {
     background-color: transparent;

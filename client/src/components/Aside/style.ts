@@ -16,6 +16,10 @@ export const StyledSection = styled.section`
     padding: 1.3rem 3rem;
     margin-top: 0.5rem;
     border-radius: 99rem;
+
+    label {
+      display: none;
+    }
   }
 
   .search-input {

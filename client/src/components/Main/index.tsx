@@ -36,11 +36,12 @@ export const Main = () => {
             />
           </div>
           <div className="info__tweet">
+            <label htmlFor="text">Textarea</label>
             <textarea
               placeholder="¡¿Que esta pasando?!"
               className="info__textarea"
               name=""
-              id=""
+              id="text"
             ></textarea>
             <div className="container__emotes-button">
               <div className="container__emotes">
